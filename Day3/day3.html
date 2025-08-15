@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container_product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product_item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product_item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- // Search sản phẩm dựa theo tên: -->
+    <div class="search-container">
+        <input type="text" placeholder="Nhập tên sản phẩm..." id="searchInput">
+        <button id="searchBtn">Tìm kiếm</button>
+    </div>
+
+    <br>
+    <br>
+    <!-- // Category -->
+    <button class="buttonCategory">Thời trang</button>
+    <button class="buttonCategory">Giày dép</button>
+    <button class="buttonCategory">Điện tử</button>
+    <button class="buttonCategory">Phụ kiện</button>
+    <button class="buttonCategory">Gia dụng</button>
+
+    <div class="container_product">
+    </div>
+
+    <script src="./day3.js"></script>
+</body>
+
+</html>
