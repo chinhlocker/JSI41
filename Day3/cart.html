@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container_product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product_item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        .product_item img {
+            width: 100%;
+            height: auto;
+        }
+        .remove-btn {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .total-price {
+            text-align: right;
+            font-size: 20px;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giỏ hàng của bạn</h1>
+    <div class="container_product">
+        <!-- Sản phẩm sẽ được thêm vào đây -->
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
