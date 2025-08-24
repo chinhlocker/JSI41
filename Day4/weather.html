@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            transition: background 0.5s ease;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            flex: 2;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+        }
+
+        .history-panel {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .history-panel h2 {
+            margin-bottom: 15px;
+        }
+
+        .history-list {
+            list-style: none;
+        }
+
+        .history-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+
+        .history-list li:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .weather-sunny {
+            background: linear-gradient(120deg, #f6d365, #fda085);
+        }
+
+        .weather-rainy {
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+        }
+
+        .weather-storm {
+            background: linear-gradient(120deg, #4B79A1, #283E51);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="weather-info" id="weatherInfo">
+                <!-- Weather information will be displayed here -->
+            </div>
+        </div>
+        <div class="history-panel">
+            <h2>Search History</h2>
+            <ul class="history-list" id="historyList">
+                <!-- Search history will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
